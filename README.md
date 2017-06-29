@@ -83,4 +83,4 @@ Supported Devices
 * [FreeRTOS](FreeRTOS)
 
 Copyright (c) 2017 SK Telecom Co., Ltd. All Rights Reserved.
-Distributed under Apache License Version 2.0.
+Distributed under Apache License Version 2.0.  
