@@ -1,8 +1,5 @@
-FreeRTOS (+TLS)
-===
-
-지원 사양
----
+# FreeRTOS (+TLS)
+## 지원 사양
 1. Footprint
 	+ CPU : 50MHz 이상
 	+ RAM : 64KB 이상
@@ -18,7 +15,7 @@ FreeRTOS (+TLS)
 	+ WIZnet W5500
     ![w5500_ethernet_shield.jpg](images/w5500_ethernet_shield.jpg)
 
-Source Tree
+## Source Tree
 ---
 * [Source](https://github.com/SKT-ThingPlug/thingplug-device-sdk-C/tree/master/FreeRTOS)
 + __FreeRTOS__ (project root)
@@ -53,11 +50,8 @@ Source Tree
 			+ __SMA__ (SensorManagementAgent)
 			+ __SRA__ (ServiceReadyAgent)
 
-Project build
-===
-
-IDE 설정
----
+# Project build
+## IDE 설정
 1. Atollic TrueSTUDIO for ARM
 	+ http://atollic.com/resources/downloads/
 	+ FreeRTOS homepage에서 추천하고 있음, Eclipse 기반의 embeded 환경 프로그램 개발 tool
@@ -148,8 +142,7 @@ Library import
 	+ __IMPORT_TLS_LIB__ : define 됐을 경우 TLS library가 포함됨
 	+ __MAC_ADDRESS__ : 사용할 mac address 지정(다른 device와 겹치면 안됨)
 
-Sample code import
----
+## Sample code import
 1. Code import
 	+ Source Tree의 '/Src/oneM2M' directory를 '/Src' directory에 복사
 2. '/Src/oneM2M/Configuration.h' 수정
@@ -168,9 +161,7 @@ Sample code import
 		+ ThingPlug_oneM2M_SDK() function 내의 SDKVerificationMain(); 활성화
 	2. MA를 실행할 경우
 		+ ThingPlug_oneM2M_SDK() function 내의 MARun(); 활성화
-
-Library path 설정
----
+## Library path 설정
 1. include path 설정
 	+ 메뉴 > 프로젝트 > 특성 > C/C++ General > Includes tab
 	![TrueSTUDIO_setting_include.png](images/TrueSTUDIO_setting_include.png)
@@ -178,8 +169,7 @@ Library path 설정
 	+ 메뉴 > 프로젝트 > 특성 > C/C++ General > Source Location tab
 	![TrueSTUDIO_setting_source.png](images/TrueSTUDIO_setting_source.png)
 
-Build & Run
----
+## Build & Run
 1. Build
 	+ 메뉴 > 프로젝트 > Build Project
 	![TrueSTUDIO_compile.png](images/TrueSTUDIO_compile.png)
@@ -194,4 +184,4 @@ Build & Run
 	(※ sample code의 main.c 파일에서 지정한 speed와 맞춰 환경을 설정해야 글자가 깨져 보이지 않음)
 	![serial_log.png](images/serial_log.png)
 
-Copyright (c) 2016 SK Telecom Co., Ltd. All Rights Reserved.
+Copyright (c) 2017 SK Telecom Co., Ltd. All Rights Reserved.
